@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --dark-color: #1a1919;
+  --dark-border: #007bff;
+  --dark-text: #fff;
+  --light-color: #fffaf1;
+  --light-border: #001f73;
+  --light-text: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 1rem;
+  line-height: 1.6;
+  background: var(--dark-color);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}

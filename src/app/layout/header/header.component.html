@@ -1,0 +1,14 @@
+<header *ngIf="isShowHeader">
+  <div class="left-side">
+    <button class="btn-back" routerLink="/">
+      Back
+    </button>
+    <input type="text" [formControl]="filterControl"/>
+  </div>
+  <div class="right-side">
+    <button class="btn-liked">
+      <span class="material-icons custom-icon">favorite</span>
+      <span class="circle">{{favoriteAlbumsCount}}</span>
+    </button>
+  </div>
+</header>

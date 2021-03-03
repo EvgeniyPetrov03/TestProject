@@ -1,0 +1,11 @@
+<div class="wrapper">
+  <div class="container">
+    <ng-container *ngFor="let genre of genres">
+      <app-genre-card
+        [name]="genre.name"
+        [color]="genre.color"
+        [imgUrl]="genre.imgUrl"
+      ></app-genre-card>
+    </ng-container>
+  </div>
+</div>

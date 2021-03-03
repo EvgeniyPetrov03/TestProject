@@ -1,0 +1,101 @@
+:host {
+  display: block;
+}
+
+header {
+  background: #353738;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .left-side {
+    display: flex;
+    align-items: center;
+
+    .btn-back {
+      margin: 0;
+      padding: 0 25px;
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 1.8rem;
+      height: 100%;
+    }
+
+    input {
+      width: 100%;
+      min-height: 30px;
+      min-width: 350px;
+      border-radius: 5px;
+      font-size: 1.5rem;
+      padding-left: 2%;
+    }
+  }
+
+  .right-side {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+    .btn-liked {
+      position: relative;
+      background: transparent;
+      border: none;
+      padding: 0 20px;
+
+      .circle {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        left: 2.6rem;
+        top: -0.4rem;
+        border-radius: 60%;
+        color: #fff;
+        background: #009fff;
+      }
+
+      .custom-icon {
+        font-size: 2rem;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  header {
+    .left-side {
+      input {
+        min-height: 30px;
+        min-width: 150px;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  header {
+    .left-side {
+      input {
+        min-height: 30px;
+        min-width: 150px;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  header {
+    .left-side {
+      input {
+        min-height: 30px;
+        min-width: 150px;
+      }
+    }
+  }
+}

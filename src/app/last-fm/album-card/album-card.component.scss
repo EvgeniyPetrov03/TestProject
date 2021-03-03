@@ -1,0 +1,46 @@
+:host {
+  display: block;
+}
+
+.album-card {
+  position: relative;
+  margin: 1rem;
+  user-select: none;
+  cursor: pointer;
+
+  .album-info {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+    .title {
+      font-size: 2rem;
+    }
+
+    .artist{
+      font-size: 1.5rem;
+    }
+
+    .custom-icon{
+      font-size: 3rem;
+    }
+  }
+
+  &:hover {
+    .album-info {
+      display: flex;
+    }
+  }
+}
+
